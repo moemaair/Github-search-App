@@ -24,6 +24,7 @@ export class UserComponent implements OnInit {
    public followings =''
    public githubLink =''
    public reposUrl =''
+   public bio =''
 
    formSubmit(){
     return this.myService.getUser(this.username)
@@ -36,6 +37,7 @@ export class UserComponent implements OnInit {
      this.repos = res.public_repos;
      this.reposUrl = res.repos_url;
      this.githubLink=res.html_url;
+     this.bio = res.bio;
 
     })
    }
