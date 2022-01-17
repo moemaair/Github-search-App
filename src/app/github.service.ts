@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 
 
 
@@ -9,26 +10,29 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GithubService {
+ 
+ clientid='Iv1.38de8f27df3d6579'
+ clientsecret='5cd1470d498837d8eeb0f5b212a2226bb15e0ac4'
+ 
 
-  constructor(private http: HttpClient) {
-   this.getData()
-   
-  }
-  getData(){
-   let promise =  this.http.get<any>(`${environment.apiToken}`)
-   .toPromise();
-   promise.then(res=>{
-    console.log(res)
-   })
-   promise.catch(erro =>{
-    console.log('error')
-   })
+constructor(private http: HttpClient) {
+}
+getUser(username:string) {
+  return this.http.get<any>('https://api.github.com/users/'+ username + '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
+}
+getMyUser(){
+ return this.http.get<any>('https://api.github.com/users/moemaair')
+}
 
 
-   return promise;
-  }
-  
+
+
+
+ 
+
+ 
  
 
   
+
 }

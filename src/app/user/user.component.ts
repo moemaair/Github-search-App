@@ -11,14 +11,42 @@ import { GithubService } from '../github.service';
 export class UserComponent implements OnInit {
 
   constructor(private myService: GithubService) {
+   }
+   ngOnInit() {
+    this.formSubmit();
+   }
    
+   public username = ''
+   public name =''
+   public repos =''
+   public avatar =''
+   public followers =''
+   public followings =''
+   public githubLink =''
+   public reposUrl =''
+
+   formSubmit(){
+    return this.myService.getUser(this.username)
+    .subscribe(res =>{
+     console.log(res)
+     this.name = res.name;
+     this.avatar = res.avatar_url;
+     this.followers =res.followers
+     this.followings =res.following;
+     this.repos = res.public_repos;
+     this.reposUrl = res.repos_url;
+     this.githubLink=res.html_url;
+
+    })
    }
 
-  ngOnInit(): any {
-   //promise object: requesting by HTTP   
-   return this.myService.getData()
-  }
+
+
+  
+
 
  
-}
 
+
+  
+}

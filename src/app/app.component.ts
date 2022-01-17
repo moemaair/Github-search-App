@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild} from '@angular/core';
+import { GithubService } from './github.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'github-search-app';
-}
+  value ='';
+
+  public arr:string[]=[];
+
+   constructor(public myService:GithubService ){
+    this.formSubmit()
+    console.log(this.value)
+   }
+    
+    formSubmit(){
+   
+    }
+
+ 
+
+ 
+     
+
+
+
+
+ }

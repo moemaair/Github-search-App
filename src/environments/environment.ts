@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiToken: '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'
-};
+  apiUrl: "https://github.com/settings/tokens/"
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
