@@ -1,27 +1,42 @@
-# GithubSearchApp
+Project Title - GITHUB-SEARCH-APP
+====================================================
+
+Description About:
+
+* * *
+<u>GITHUB-SEARCH-APP</u> is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's followings, followers, profile picture, link to there github etc. 
+
+# github-search-app
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve -o` for a dev server, which you will be taken automatically to your search engine with Url = `http://localhost:4200/`. 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Technologies Use
 
-## Running end-to-end tests
+ * Angular
+ * HTML5
+ * CSS3
+ * BOOTSTRAP
+ * GIT
+ 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### <h2>FIND ME HERE 👨🏾‍💻 </h2>
+* [Email Me](mailto:rageali12@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)
+* [Portfolio](https://moemaair.github.io/Portfolio-Landing-pg/)
 
-## Further help
+## Licence
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The MIT Open source License: [MIT LICENSE](https://opensource.org/licenses/MIT)
+
+
+
+
+
